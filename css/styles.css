@@ -1,1 +1,164 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
 
+.featured-section {
+  text-align: center;
+  background-color: #e7b355;
+  padding: 50px 20px;
+}
+
+.featured-section h1 {
+  color: #1e1e1e;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.featured-section h2 {
+  color: #a43d1b;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.featured-section p {
+  color: #73472a;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 350px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.pet-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pet-gallery img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.pet-care {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.care-box {
+  background-color: #e1552f;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.resource-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.info-box {
+  background-color: #b6e1c2;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 220px;
+  max-width: 250px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ====== FOOTER SECTION ====== */
+
+footer {
+  background-color: #1e1e1e;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+footer h3 {
+  color: #e7b355;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 0.95em;
+}
+
+.footer-links {
+  margin: 15px 0;
+}
+
+.footer-links a {
+  color: #e7b355;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #b6e1c2;
+}
+
+footer small {
+  display: block;
+  margin-top: 15px;
+  color: #777;
+  font-size: 0.85em;
+}
