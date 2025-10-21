@@ -1,194 +1,403 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PawPal | Pet Adoption Hub</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Your Buddy for Finding a Furry Friend</title>
+    
+    <!-- Favicon placeholders -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/pawpal-styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <header>
-    <div class="logo">🐾 PawPal <span>Pet Adoption</span></div>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Adopt</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div class="search-bar">
-      <input type="text" placeholder="Search here..." />
-      <button>🔍</button>
-    </div>
-  </header>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <!-- PLACEHOLDER: Add paw icon SVG or image here -->
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <span class="logo-text">PawPal</span>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="adoptable.html" class="nav-link">Adopt</a></li>
+                        <li><a href="resources.html" class="nav-link">Resources</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Hamburger -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+                
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here..." class="search-input">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to <span>PawPal</span></h1>
-      <h2>Your Buddy for Finding a Furry Friend</h2>
-      <p>
-        PawPal is your all-in-one pet adoption hub designed to bring loving pets and caring humans together.
-        Safe, simple, and stress-free, our platform connects you with verified shelters, rescues, and individuals.
-        With advanced search filters, maps, and care resources, we help you find the perfect match for your lifestyle.
-      </p>
-      <blockquote>
-        “Every match means a new story, a new bond, a new home filled with love.”
-      </blockquote>
-      <button id="adoptBtn">Adopt Now!</button>
-    </div>
-    <div class="hero-placeholder">
-      🐶🐱🐰🐾
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Welcome to PawPal</h1>
+                <h2 class="hero-subtitle">Your Buddy for Finding a Furry Friend</h2>
+                <p class="hero-description">
+                    PawPal is your all-in-one pet adoption hub designed to bring loving pets and caring humans together. Safe, simple, and stress-free, our platform connects you with verified shelters, rescues, and individuals. With advanced search filters, maps, and care resources, we help you find the perfect match for your lifestyle.
+                </p>
+                <p class="hero-quote">"Every match means a new story, a new bond, a new home filled with love."</p>
+                <a href="adoptable.html" class="btn btn-adopt">Adopt Now!</a>
+            </div>
+        </div>
+        
+        <!-- Pet Lineup Image -->
+        <div class="hero-pets">
+            <!-- PLACEHOLDER: images/hero-pets-lineup.png (pug, chihuahua, cat, beagle, black cat, orange cat) -->
+            <img src="images/hero-pets-lineup.png" alt="Adorable pets looking for homes">
+        </div>
+    </section>
 
-  <!-- How PawPal Works -->
-  <section class="how-it-works">
-    <h2>How <span>PawPal</span> Works?</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="icon-placeholder">🔍</div>
-        <h3>Discover</h3>
-        <p>Explore adoptable pets through verified profiles and inspiring stories.</p>
-      </div>
-      <div class="step">
-        <div class="icon-placeholder">🤝</div>
-        <h3>Connect</h3>
-        <p>Reach out securely to shelters, rescues, or responsible pet owners.</p>
-      </div>
-      <div class="step">
-        <div class="icon-placeholder">🏡</div>
-        <h3>Adopt</h3>
-        <p>Meet your perfect match and begin your adoption journey.</p>
-      </div>
-      <div class="step">
-        <div class="icon-placeholder">❤️</div>
-        <h3>Care</h3>
-        <p>Access free guides, resources, and community support for pet parenting.</p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="featured-section">
-    <h1>FEATURED ADOPTABLE PETS</h1>
-    <h2>Find Your Next Best Friend</h2>
-    <p>
-      Browse dogs, cats, rabbits, and more — all waiting for their forever home. 
-      Each profile includes photos, personality details, medical info, and location, 
-      so you can easily find the right match.
-    </p>
+    <!-- How PawPal Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">HOW <span class="highlight">PAWPAL WORKS?</span></h2>
+            
+            <div class="steps-grid">
+                <!-- Step 1: Discover -->
+                <div class="step-card">
+                    <div class="step-image">
+                        <!-- PLACEHOLDER: images/dog-discover.png -->
+                        <img src="images/discover-dog.png" alt="Discover pets">
+                    </div>
+                    <div class="step-content">
+                        <h3>Discover</h3>
+                        <p>Explore adoptable pets through verified profiles and inspiring stories.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Connect -->
+                <div class="step-card">
+                    <div class="step-image">
+                        <!-- PLACEHOLDER: images/cat-connect.png -->
+                        <img src="images/connect-cat.png" alt="Connect with shelters">
+                    </div>
+                    <div class="step-content">
+                        <h3>Connect</h3>
+                        <p>Reach out securely to shelters, rescues, or responsible pet owners.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Adopt -->
+                <div class="step-card">
+                    <div class="step-image">
+                        <!-- PLACEHOLDER: images/dog-adopt.png -->
+                        <img src="images/adopt-dog.png" alt="Adopt your pet">
+                    </div>
+                    <div class="step-content">
+                        <h3>Adopt</h3>
+                        <p>Meet your perfect match and begin your adoption journey.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Care -->
+                <div class="step-card">
+                    <div class="step-image">
+                        <!-- PLACEHOLDER: images/cat-care.png -->
+                        <img src="images/care-cat.png" alt="Pet care resources">
+                    </div>
+                    <div class="step-content">
+                        <h3>Care</h3>
+                        <p>Access free guides, resources, and community support for pet parenting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Search here...">
-      <button><i class="search-icon">🔍</i></button>
-    </div>
+    <!-- Why Choose PawPal Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <!-- Left: Dogs Image -->
+                <div class="why-choose-image">
+                    <!-- PLACEHOLDER: images/two-dogs.png (German Shepherds) -->
+                    <img src="images/happy-dogs.png" alt="Happy adopted dogs">
+                </div>
+                
+                <!-- Right: Content -->
+                <div class="why-choose-text">
+                    <h2 class="section-title">WHY <span class="highlight-red">CHOOSE PAWPAL?</span></h2>
+                    
+                    <div class="video-container">
+                        <div class="video-thumbnail">
+                            <video class="custom-video" controls>
+                                <source src="media/dogs.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
 
-    <div class="filters">
-      <select><option>Pet Type:</option></select>
-      <select><option>Breed:</option></select>
-      <select><option>Age:</option></select>
-      <select><option>Gender:</option></select>
-      <select><option>Location:</option></select>
-      <select><option>Temperature:</option></select>
-    </div>
+                    
+                    <!-- Benefits List -->
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Easy-to-use platform with smart filters and location-based searches.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free resources to help you prepare and care for your pet.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Safe and transparent communication with verified profiles.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Support for both adopting and responsibly rehoming pets.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="pet-gallery">
-      <img src="images/pet1.jpg" alt="Pet 1">
-      <img src="images/pet2.jpg" alt="Pet 2">
-      <img src="images/pet3.jpg" alt="Pet 3">
-      <img src="images/pet4.jpg" alt="Pet 4">
-      <img src="images/pet5.jpg" alt="Pet 5">
-      <img src="images/pet6.jpg" alt="Pet 6">
-    </div>
-  </section>
+    <!-- Featured Adoptable Pets Section -->
+    <section class="featured-pets">
+        <div class="container">
+            <h2 class="section-title-dark">FEATURED<br>ADOPTABLE PETS</h2>
+            <h3 class="section-subtitle-red">Find Your Next Best Friend</h3>
+            <p class="section-description">
+                Browse dogs, cats, rabbits, and more — all waiting for their forever home. Each profile includes photos, personality details, medical info, and location, so you can easily find the right match.
+            </p>
+            
+            <!-- Search and Filters -->
+            <div class="pet-search-bar">
+                <input type="text" placeholder="Search here..." class="pet-search-input">
+                <button class="pet-search-btn" aria-label="Search pets">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="pet-filters">
+                <select class="filter-select">
+                    <option value="">Pet Type:</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <select class="filter-select">
+                    <option value="">Breed:</option>
+                    <option value="mixed">Mixed Breed</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="persian">Persian</option>
+                </select>
+                
+                <select class="filter-select">
+                    <option value="">Age:</option>
+                    <option value="puppy">Puppy/Kitten</option>
+                    <option value="adult">Adult</option>
+                    <option value="senior">Senior</option>
+                </select>
+                
+                <select class="filter-select">
+                    <option value="">Gender:</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <select class="filter-select">
+                    <option value="">Location:</option>
+                    <option value="local">Near Me</option>
+                    <option value="city">City</option>
+                </select>
+                
+                <select class="filter-select">
+                    <option value="">Temperament:</option>
+                    <option value="friendly">Friendly</option>
+                    <option value="calm">Calm</option>
+                    <option value="energetic">Energetic</option>
+                </select>
+            </div>
+        </section>
+            <!-- Pet Gallery -->
+            <div class="pet-gallery">
+                <!-- PLACEHOLDER: 6 pet images from your folder -->
+                <div class="pet-card">
+                    <img src="images/adoptable-pet-1.png" alt="Adoptable pet 1">
+                </div>
+                <div class="pet-card">
+                    <img src="images/adoptable-pet-2.png" alt="Adoptable pet 2">
+                </div>
+                <div class="pet-card">
+                    <img src="images/adoptable-pet-3.png" alt="Adoptable pet 3">
+                </div>
+                <div class="pet-card">
+                    <img src="images/adoptable-pet-4.png" alt="Adoptable pet 4">
+                </div>
+                <div class="pet-card">
+                    <img src="images/adoptable-pet-5.png" alt="Adoptable pet 5">
+                </div>
+                <div class="pet-card">
+                    <img src="images/adoptable-pet-6.png" alt="Adoptable pet 6">
+                </div>
+            </div>
+        </div>
+    
 
-  <section class="pet-care">
-    <div class="care-box">
-      <h3>PET CARE</h3>
-      <button class="resource-btn">RESOURCES</button>
-    </div>
-    <div class="info-box">
-      <p>🐾 Care guides for dogs, cats, and small animals</p>
-    </div>
-    <div class="info-box">
-      <p>💡 Training tips and behavioral advice</p>
-    </div>
-    <div class="info-box">
-      <p>❤️ Health and nutrition resources</p>
-    </div>
-    <div class="info-box">
-      <p>📋 First-week adoption checklists</p>
-    </div>
-  </section>
+    <!-- Pet Care Resources Section -->
+    <section class="pet-care-resources">
+        <div class="container">
+            <div class="resources-grid">
+                <!-- Main Resource Card -->
+                <a href="resources.html" class="resource-card resource-main">
+                    <h3>PET<br>CARE</h3>
+                    <p class="resource-link">RESOURCES <i class="fas fa-chevron-right"></i></p>
+                </a>
+                
+                <!-- Care Guides -->
+                <a href="https://paws.org.ph/adopt/" class="resource-card resource-teal">
+                    <div class="resource-icon">
+                        <i class="fas fa-paw"></i>
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <p>Care guides for dogs, cats, and small animals</p>
+                </a>
+                
+                <!-- Training Tips -->
+                <a href="https://thinkingoutsidethecage.org/resources/behavior-care-tips/" class="resource-card resource-teal">
+                    <div class="resource-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <p>Training tips and behavioral advice</p>
+                </a>
+                
+                <!-- Health Resources -->
+                <a href="https://www.pet-medcenter.com/patient-resources/health-topics/nutrition-and-pet-foods" class="resource-card resource-teal">
+                    <div class="resource-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p>Health and nutrition resources</p>
+                </a>
+                
+                <!-- Checklists -->
+                <a href="https://hpvets.com/newpetchecklist/" class="resource-card resource-teal">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <p>First-week adoption checklists</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <!-- Left section -->
-    <div class="footer-about">
-      <div class="footer-logo">🐾 <strong>PawPal</strong></div>
-      <p>
-        PawPal is your all-in-one pet adoption hub designed to bring loving pets
-        and caring humans together.
-      </p>
-      <p>© Copyright 2025 PawPal. All rights reserved.</p>
-      <div class="footer-socials">
-        <a href="#">🌐</a>
-        <a href="#">📸</a>
-        <a href="#">✖️</a>
-      </div>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Logo & Social -->
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <span class="logo-text">PawPal</span>
+                    </div>
+                    <p>PawPal is a 5-star pet adoption hub designed to bring loving pets and caring humans together safely.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100084297643596" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adopt.ph/?hl=en" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/PAWSPhilippines" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Navigation -->
+                <div class="footer-section">
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="adoptable.html">Adopt</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div class="footer-section">
+                    <h3>SERVICES</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Adoption Services</a></li>
+                        <li><a href="services.html">Verified Profiles</a></li>
+                        <li><a href="services.html">Shelter Partners</a></li>
+                        <li><a href="portfolio.html">Pet Care Resources</a></li>
+                        <li><a href="portfolio.html">Educational Content</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Quick FAQ -->
+                <div class="footer-section">
+                    <h3>QUICK FAQ</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">How does PawPal adoption work?</a></li>
+                        <li><a href="about.html">Is adopting through PawPal free?</a></li>
+                        <li><a href="services.html">What kind of pets are available for adoption?</a></li>
+                        <li><a href="contact.html">Can I rehome my pet through PawPal?</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 5: Contacts -->
+                <div class="footer-section">
+                    <h3>CONTACTS</h3>
+                    <p><strong>Support Through Social Media</strong></p>
+                    <p class="footer-email">
+                        <a href="mailto:support@pawpal.com">support@pawpal.com</a>
+                    </p>
+                    <div class="footer-hours">
+                        <p><strong>INQUIRIES</strong></p>
+                        <p>Monday - Sunday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Navigation -->
-    <div class="footer-column">
-      <h4>NAVIGATION</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Adopt</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-column">
-      <h4>SERVICES</h4>
-      <ul>
-        <li><a href="#">Pet Listings</a></li>
-        <li><a href="#">Smart Search & Filters</a></li>
-        <li><a href="#">Verified Profiles</a></li>
-        <li><a href="#">Adoption Journey Guidance</a></li>
-        <li><a href="#">Pet Care Resources</a></li>
-        <li><a href="#">Educational Content</a></li>
-      </ul>
-    </div>
-
-    <!-- Quick FAQ -->
-    <div class="footer-column">
-      <h4>QUICK FAQ</h4>
-      <p><strong>How do I adopt a pet through PawPal?</strong><br>
-        Browse pets, use filters, and follow the steps on their profile.</p>
-      <p><strong>Is adopting through PawPal free?</strong><br>
-        Yes, though some pet adoptions may have standard fees.</p>
-      <p><strong>What kind of pets are available for adoption?</strong><br>
-        Dogs, cats, rabbits, and other small animals.</p>
-    </div>
-
-    <!-- Contacts -->
-    <div class="footer-column">
-      <h4>CONTACTS</h4>
-      <p>+63 900 000 0000</p>
-      <h4>INQUIRIES</h4>
-      <p>support@pawpal.com</p>
-    </div>
-  </div>
-</footer>
-
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
-
