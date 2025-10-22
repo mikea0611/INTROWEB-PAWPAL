@@ -1,180 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PawPal | Pet Care Resources</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="resources.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Pet Care Resources</title>
+    
+    <!-- Favicon placeholders -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/pawpal-styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="PawPal Logo">
-      <h1>PawPal</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="adopt.html">Adopt</a></li>
-        <li><a href="resources.html" class="active">Resources</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div class="search">
-      <input type="text" placeholder="Search here...">
-      <button><i class="fa fa-search"></i></button>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>PET CARE RESOURCES</h1>
-      <p class="subtitle">Learn Before You Adopt</p>
-      <p class="desc">Adopting a pet is a big decision. PawPal helps you prepare with:</p>
-    </div>
-    <img src="images/rabbit.png" alt="Rabbit" class="hero-img">
-  </section>
+    <!-- Header / Navigation (copied from main) -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <span class="logo-text">PawPal</span>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="adoptable.html" class="nav-link">Adopt</a></li>
+                        <li><a href="portfolio.html" class="nav-link active">Resources</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
 
-  <!-- Info Boxes -->
-  <section class="info-boxes">
-    <div class="box">
-      <i class="fa fa-paw"></i>
-      <p>Care guides for dogs, cats, and small animals</p>
-    </div>
-    <div class="box">
-      <i class="fa fa-lightbulb"></i>
-      <p>Training tips and behavioral advice</p>
-    </div>
-    <div class="box">
-      <i class="fa fa-heartbeat"></i>
-      <p>Health and nutrition resources</p>
-    </div>
-    <div class="box">
-      <i class="fa fa-clipboard-check"></i>
-      <p>First-week adoption checklists</p>
-    </div>
-  </section>
+                    <!-- Mobile Hamburger -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
 
-  <!-- Pet Care Table -->
-  <section class="pet-table-section">
-    <table class="pet-table">
-      <thead>
-        <tr>
-          <th>Pet Type</th>
-          <th>Average Lifespan</th>
-          <th>Basic Monthly Care Need</th>
-          <th>Ideal For</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Dog</td>
-          <td>10 - 15 Years</td>
-          <td>Food, walks, vet check-ups</td>
-          <td>Active families, singles</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>12 - 18 Years</td>
-          <td>Food, litter, vet check-ups</td>
-          <td>Apartments, calm homes</td>
-        </tr>
-        <tr>
-          <td>Rabbit</td>
-          <td>8 - 12 Years</td>
-          <td>Hay, veggies, grooming</td>
-          <td>Gentle families</td>
-        </tr>
-        <tr>
-          <td>Bird</td>
-          <td>5 - 10 Years</td>
-          <td>Seeds, cage cleaning</td>
-          <td>Smaller living spaces</td>
-        </tr>
-        <tr>
-          <td>Hamster</td>
-          <td>2 - 3 Years</td>
-          <td>Food, bedding, exercise wheel</td>
-          <td>First-time pet owners</td>
-        </tr>
-        <tr>
-          <td>Fish</td>
-          <td>1 - 5 Years</td>
-          <td>Food, tank cleaning</td>
-          <td>Low-maintenance homes</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here..." class="search-input">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <!-- Left section -->
-    <div class="footer-about">
-      <div class="footer-logo">🐾 <strong>PawPal</strong></div>
-      <p>
-        PawPal is your all-in-one pet adoption hub designed to bring loving pets
-        and caring humans together.
-      </p>
-      <p>© Copyright 2025 PawPal. All rights reserved.</p>
-      <div class="footer-socials">
-        <a href="#">🌐</a>
-        <a href="#">📸</a>
-        <a href="#">✖️</a>
-      </div>
-    </div>
+    <!-- HERO SECTION -->
+    <section class="resources-hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="resources-hero-title">PET CARE RESOURCES</h1>
+                <h2 class="resources-hero-subtitle">Learn Before You Adopt</h2>
+                <p class="resources-hero-description">
+                    Adopting a pet is a big decision. PawPal helps you prepare with:
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="images/bunny.png" alt="Rabbit" class="rabbit-resources">
+            </div>
+        </div>
+    </section>
 
-    <!-- Navigation -->
-    <div class="footer-column">
-      <h4>NAVIGATION</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Adopt</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
 
-    <!-- Services -->
-    <div class="footer-column">
-      <h4>SERVICES</h4>
-      <ul>
-        <li><a href="#">Pet Listings</a></li>
-        <li><a href="#">Smart Search & Filters</a></li>
-        <li><a href="#">Verified Profiles</a></li>
-        <li><a href="#">Adoption Journey Guidance</a></li>
-        <li><a href="#">Pet Care Resources</a></li>
-        <li><a href="#">Educational Content</a></li>
-      </ul>
-    </div>
+    <!-- OVERLAPPING CARDS SECTION -->
+    <section class="resources-cards" style="margin-top: -6rem; position: relative; z-index: 5;">
+        <div class="container">
+            <div class="card-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <!-- Card 1 -->
+                <div class="resource-card" style="background-color: #69BFA6; border-radius: 40px 40px 0 0; padding: 2rem; width: 220px; text-align: center; color: #fff;">
+                    <i class="fas fa-paw fa-2x"></i>
+                    <p>Care guides for dogs, cats, and small animals</p>
+                </div>
 
-    <!-- Quick FAQ -->
-    <div class="footer-column">
-      <h4>QUICK FAQ</h4>
-      <p><strong>How do I adopt a pet through PawPal?</strong><br>
-        Browse pets, use filters, and follow the steps on their profile.</p>
-      <p><strong>Is adopting through PawPal free?</strong><br>
-        Yes, though some pet adoptions may have standard fees.</p>
-      <p><strong>What kind of pets are available for adoption?</strong><br>
-        Dogs, cats, rabbits, and other small animals.</p>
-    </div>
+                <!-- Card 2 -->
+                <div class="resource-card" style="background-color: #69BFA6; border-radius: 40px 40px 0 0; padding: 2rem; width: 220px; text-align: center; color: #fff;">
+                    <i class="fas fa-lightbulb fa-2x"></i>
+                    <p>Training tips and behavioral advice</p>
+                </div>
 
-    <!-- Contacts -->
-    <div class="footer-column">
-      <h4>CONTACTS</h4>
-      <p>+63 900 000 0000</p>
-      <h4>INQUIRIES</h4>
-      <p>support@pawpal.com</p>
-    </div>
-  </div>
-</footer>
+                <!-- Card 3 -->
+                <div class="resource-card" style="background-color: #69BFA6; border-radius: 40px 40px 0 0; padding: 2rem; width: 220px; text-align: center; color: #fff;">
+                    <i class="fas fa-heartbeat fa-2x"></i>
+                    <p>Health and nutrition resources</p>
+                </div>
 
+                <!-- Card 4 -->
+                <div class="resource-card" style="background-color: #69BFA6; border-radius: 40px 40px 0 0; padding: 2rem; width: 220px; text-align: center; color: #fff;">
+                    <i class="fas fa-clipboard-list fa-2x"></i>
+                    <p>First-week adoption checklists</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PET COMPARISON TABLE -->
+    <section class="resources-table" style="padding: 6rem 0; background-color: #fff;">
+        <div class="container">
+            <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                <thead style="background-color: #C35A33; color: #fff;">
+                    <tr>
+                        <th style="padding: 1rem;">Pet Type</th>
+                        <th style="padding: 1rem;">Average Lifespan</th>
+                        <th style="padding: 1rem;">Basic Monthly Care Need</th>
+                        <th style="padding: 1rem;">Ideal For</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: #F9EAE5; color: #222;">
+                    <tr>
+                        <td style="padding: 1rem;">Dog</td>
+                        <td style="padding: 1rem;">10 - 15 Years</td>
+                        <td style="padding: 1rem;">Food, walks, vet check-ups</td>
+                        <td style="padding: 1rem;">Active families, singles</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;">Cat</td>
+                        <td style="padding: 1rem;">12 - 18 Years</td>
+                        <td style="padding: 1rem;">Food, litter, vet check-ups</td>
+                        <td style="padding: 1rem;">Apartments, calm homes</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;">Rabbit</td>
+                        <td style="padding: 1rem;">8 - 12 Years</td>
+                        <td style="padding: 1rem;">Hay, veggies, grooming</td>
+                        <td style="padding: 1rem;">Gentle families</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;">Bird</td>
+                        <td style="padding: 1rem;">5 - 10 Years</td>
+                        <td style="padding: 1rem;">Seeds, cage cleaning</td>
+                        <td style="padding: 1rem;">Smaller living spaces</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;">Hamster</td>
+                        <td style="padding: 1rem;">2 - 3 Years</td>
+                        <td style="padding: 1rem;">Food, bedding, exercise wheel</td>
+                        <td style="padding: 1rem;">First-time pet owners</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;">Fish</td>
+                        <td style="padding: 1rem;">1 - 5 Years</td>
+                        <td style="padding: 1rem;">Food, tank cleaning</td>
+                        <td style="padding: 1rem;">Low-maintenance homes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Logo & Social -->
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <span class="logo-text">PawPal</span>
+                    </div>
+                    <p>PawPal is a 5-star pet adoption hub designed to bring loving pets and caring humans together safely.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100084297643596" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adopt.ph/?hl=en" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/PAWSPhilippines" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Navigation -->
+                <div class="footer-section">
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="adoptable.html">Adopt</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div class="footer-section">
+                    <h3>SERVICES</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://share.google/EobHbAgfKsFPFc2PC">Adoption Services</a></li>
+                        <li><a href="https://www.spot.ph/things-to-do/the-latest-things-to-do/103802/pet-adoption-list-of-places-in-the-philippines-a5229-20230219-lfrm">Verified Profiles</a></li>
+                        <li><a href="https://www.wer4happytails.com/partner-shelters">Shelter Partners</a></li>
+                        <li><a href="https://www.caraphil.org/">Pet Care Resources</a></li>
+                        <li><a href="https://peteducationpartnership.org/learning-resources/">Educational Content</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Quick FAQ -->
+                <div class="footer-section">
+                    <h3>QUICK FAQ</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">How does PawPal adoption work?</a></li>
+                        <li><a href="about.html">Is adopting through PawPal free?</a></li>
+                        <li><a href="adoptable.html">What kind of pets are available for adoption?</a></li>
+                        <li><a href="contact.html">Can I rehome my pet through PawPal?</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 5: Contacts -->
+                <div class="footer-section">
+                    <h3>CONTACTS</h3>
+                    <p><strong>Support Through Social Media</strong></p>
+                    <p class="footer-email">
+                        <a href="mailto:support@pawpal.com">support@pawpal.com</a>
+                    </p>
+                    <div class="footer-hours">
+                        <p><strong>INQUIRIES</strong></p>
+                        <p>Monday - Sunday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
-
