@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoptable Pets - PawPal</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/pawpal-styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <span class="logo-text">PawPal</span>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="adoptable.html" class="nav-link">Adopt</a></li>
+                        <li><a href="resources.html" class="nav-link">Resources</a></li>
+                        <li><a href="contact.html" class="nav-link  active">Contact Us</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Hamburger -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+                
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here..." class="search-input">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+<body>
 
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section">
+    <div class="contact-header">
+      <p class="symbol">&#9993</p>
+      <h1>CONTACT</h1>
+      <h3>WE’RE HERE TO HELP</h3>
+      <p>Have questions, feedback, or need help with a listing?<br>Get in touch with the PawPal team:</p>
+    </div>
+
+    <div class="contact-info">
+      <p>
+        <img src="images/email_icon.jpg" alt="Email Icon" class="email-icon">
+        <strong>Email:</strong> support@pawpal.com
+      </p>
+      <p>
+        <img src="images/phone_icon.jpg" alt="Phone Icon" class="phone-icon">
+        <strong>Phone:</strong> +63 900 000 0000 (click-to-call on mobile)
+      </p>
+
+      <p class="social-line">
+        <strong>Socials:</strong>
+        <img src="images/socials_icon.jpg" alt="Socials Icon" class="socials-icon">
+      </p>
+
+      <blockquote>"Together, we make every adoption story a happy one."</blockquote>
+    </div>
+
+      <div class="form-title-wrapper">
+        <h2 class="form-title">Contact / Inquiry Form</h2>
+        <img src="images/dog_form.png" alt="Dog" class="dog-image">
+      </div>
+
+      <div class="form-container">
+      <h3>Contact PawPal Team</h3>
+      <form id="contactForm">
+        <div class="form-row">
+          <label>Full Name*</label>
+          <input type="text" id="name" required>
+
+          <label>Message/Inquiry</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+
+        <label>Email Address*</label>
+        <input type="email" id="email" required>
+
+        <label>Pet Choice</label>
+        <select id="petChoice">
+          <option value="">Select...</option>
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label>Experience with Pets</label>
+        <input type="text" id="experience">
+
+        <label>Reason for Adoption</label>
+        <textarea id="reason" rows="3"></textarea>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Logo & Social -->
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <span class="logo-text">PawPal</span>
+                    </div>
+                    <p>PawPal is a 5-star pet adoption hub designed to bring loving pets and caring humans together safely.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100084297643596" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adopt.ph/?hl=en" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/PAWSPhilippines" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Navigation -->
+                <div class="footer-section">
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="adoptable.html">Adopt</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div class="footer-section">
+                    <h3>SERVICES</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://share.google/EobHbAgfKsFPFc2PC">Adoption Services</a></li>
+                        <li><a href="https://www.spot.ph/things-to-do/the-latest-things-to-do/103802/pet-adoption-list-of-places-in-the-philippines-a5229-20230219-lfrm">Verified Profiles</a></li>
+                        <li><a href="https://www.wer4happytails.com/partner-shelters">Shelter Partners</a></li>
+                        <li><a href="https://www.caraphil.org/">Pet Care Resources</a></li>
+                        <li><a href="https://peteducationpartnership.org/learning-resources/">Educational Content</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Quick FAQ -->
+                <div class="footer-section">
+                    <h3>QUICK FAQ</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">How does PawPal adoption work?</a></li>
+                        <li><a href="about.html">Is adopting through PawPal free?</a></li>
+                        <li><a href="adoptable.html">What kind of pets are available for adoption?</a></li>
+                        <li><a href="contact.html">Can I rehome my pet through PawPal?</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 5: Contacts -->
+                <div class="footer-section">
+                    <h3>CONTACTS</h3>
+                    <p><strong>Support Through Social Media</strong></p>
+                    <p class="footer-email">
+                        <a href="mailto:support@pawpal.com">support@pawpal.com</a>
+                    </p>
+                    <div class="footer-hours">
+                        <p><strong>INQUIRIES</strong></p>
+                        <p>Monday - Sunday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/adopt-filter.js"></script>
+</body>
+</html>
